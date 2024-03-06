@@ -1,0 +1,50 @@
+;
+;	File 'hp1a_dimer_amber99sbws_stq_tip4p2005s.top' was generated
+;	By user: unknown (23097)
+;	On host: g020.cluster
+;	At date: Sat Oct 30 09:54:10 2021
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                :-) GROMACS - gmx pdb2gmx, 2020.3-MODIFIED (-:
+;	
+;	Executable:   /sw/eb/sw/GROMACS/2020.3-fosscuda-2019b/bin/gmx_mpi
+;	Data prefix:  /sw/eb/sw/GROMACS/2020.3-fosscuda-2019b
+;	Working dir:  /scratch/user/tienminhphan/HP1a/AA_sims/WT/ff_stq
+;	Command line:
+;	  gmx_mpi pdb2gmx -f hp1a_dimer.pdb -p hp1a_dimer_amber99sbws_stq_tip4p2005s.top -i hp1a_dimer_amber99sbws_stq_tip4p2005s_porse.itp -o data/gro/hp1a_dimer_amber99sbws_stq_tip4p2005s_vac.gro -ignh -ter -chainsep id_or_ter -renum
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./amber99sbws-stq.ff/forcefield.itp"
+
+; Include chain topologies
+#include "hp1a_dimer_amber99sbws_stq_tip4p2005s_Protein_chain_A.itp"
+#include "hp1a_dimer_amber99sbws_stq_tip4p2005s_Protein_chain_B.itp"
+
+; Include water topology
+#include "./amber99sbws-stq.ff/tip4p2005s.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "./amber99sbws-stq.ff/ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1
+Protein_chain_B     1
+SOL         83348
+NA               123
+CL               114
