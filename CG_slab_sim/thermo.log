@@ -1,0 +1,2 @@
+#timestep	potential_energy	pair_ashbaugh_energy	pair_yukawa_energy	bond_harmonic_energy	pressure_xx	pressure_yy	pressure_zz	temperature	lx	ly	lz
+0	-8467.470703	-7406.866211	-1083.69043	23.08539772	-3.04974983e-05	-1.297062136e-05	-1.544574661e-05	7.475874099e-06	170	170	1190
