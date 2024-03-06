@@ -6,7 +6,7 @@ The `PDB_files` folder contains all the PDB files used for the simulations in th
 
 ### Single-chain simulations
 1. All-atom simulations
-The `AA_sim` folder contains the Amber99SBws-STQ force field and sample script to run an all-atom simulation of $HP1\alpha$ using OpenMM (7.5.1).
+The `AA_sim` folder contains the Amber99SBws-STQ force field and sample script to run an all-atom simulation of $\rm HP1\alpha$ using OpenMM (7.5.1).
 
 ```python
 python run_equilibration -t 50 -f hp1a_dimer_amber99sbws_stq_tip4p2005s  # 50ns equilibration.
