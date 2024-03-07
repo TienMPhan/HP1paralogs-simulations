@@ -38,6 +38,10 @@ Sample scripts in the `CG_slab_sim` folder are used to run the coarse-grained sl
 python run_nvt.py 170x170x170_box_min.gsd --mode=gpu
 ```
 
+> [!NOTE]
+> HOOMD shoulf be complied with AZplugins [https://github.com/mphowardlab/azplugins](https://github.com/mphowardlab/azplugins)
+
+
 ### Reference:
 
 Phan et al., Interplay between charge distribution and DNA in shaping HP1 paralog phase separation and localization (eLife 2024), [https://doi.org/10.7554/eLife.90820](https://doi.org/10.7554/eLife.90820)
