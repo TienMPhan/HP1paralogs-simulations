@@ -20,7 +20,7 @@ mpirun lmp_mpi -in hp1a.lmp > log.out
 ```
 
 ### Coarse-grained phase coexistence simulations
-![[ | 240 ]](./files/HP1_slab.gif)
+![](./files/HP1_slab.gif | width=240)
 
 Sample scripts in the `CG_sim` folder are used to run the coarse-grained slab simulation of $\rm HP1\alpha$ homodimer in HOOMD.
 
