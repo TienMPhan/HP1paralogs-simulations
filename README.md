@@ -2,17 +2,23 @@
 Scripts to run the simulations of HP1 paralogs
 
 ### 3D structures
+
 The `PDB_files` folder contains all the PDB files used for the simulations in the paper (e.g., HP1 homo- and heterodimer, chimeras, ...).
 
 ### Single-chain simulations
-1. All-atom simulations
+
+1. **All-atom simulations**
+
+<img src='./files/HP1a_SC-AA.gif' width='360'>
+
 The `AA_sim` folder contains the Amber99SBws-STQ force field and sample script to run an all-atom simulation of $\rm HP1\alpha$ homodimer using OpenMM (7.5.1).
 
 ```python
 python run_equilibration.py -t 50 -f hp1a_dimer_amber99sbws_stq_tip4p2005s  # 50ns equilibration.
 python run_omm.py -t 50 -f hp1a_dimer_amber99sbws_stq_tip4p2005s  -idx1 1 -idx2 1  # 350ns production from checkpoint.
 ```
-2. Coarse-grained simulations
+
+2. **Coarse-grained simulations**
 
 <img src='./files/HP1_SC.gif' width='360'>
 
