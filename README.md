@@ -20,6 +20,7 @@ mpirun lmp_mpi -in hp1a.lmp > log.out
 ```
 
 ### Coarse-grained phase coexistence simulations
+![](./files/HP1_slab.gif)
 
 Sample scripts in the `CG_sim` folder are used to run the coarse-grained slab simulation of $\rm HP1\alpha$ homodimer in HOOMD.
 
@@ -29,4 +30,4 @@ python run_nvt.py 170x170x170_box_min.gsd --mode=gpu
 
 ### Reference:
 
-Phan et al., Interplay between charge distribution and DNA in shaping HP1 paralog phase separation and localization (eLife 2024), [[https://doi.org/10.7554/eLife.90820.2]]]
+Phan et al., Interplay between charge distribution and DNA in shaping HP1 paralog phase separation and localization (eLife 2024), [https://doi.org/10.7554/eLife.90820.2]
