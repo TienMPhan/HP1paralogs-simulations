@@ -13,6 +13,7 @@ python run_equilibration.py -t 50 -f hp1a_dimer_amber99sbws_stq_tip4p2005s  # 50
 python run_omm.py -t 50 -f hp1a_dimer_amber99sbws_stq_tip4p2005s  -idx1 1 -idx2 1  # 350ns production from checkpoint.
 ```
 2. Coarse-grained simulations
+<img src='./files/HP1_SC.gif' width='360'>
 Sample scripts in the `CG_sim` folder are used to run the single-chain coarse-grained simulation of $\rm HP1\alpha$ homodimer in LAMMPS.
 
 ```bash
@@ -22,7 +23,7 @@ mpirun lmp_mpi -in hp1a.lmp > log.out
 ### Coarse-grained phase coexistence simulations
 <img src='./files/HP1_slab.gif' width='360'>
 
-Sample scripts in the `CG_sim` folder are used to run the coarse-grained slab simulation of $\rm HP1\alpha$ homodimer in HOOMD.
+Sample scripts in the `CG_slab_sim` folder are used to run the coarse-grained slab simulation of $\rm HP1\alpha$ homodimer in HOOMD.
 
 ```python
 python run_nvt.py 170x170x170_box_min.gsd --mode=gpu
