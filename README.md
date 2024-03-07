@@ -1,11 +1,11 @@
 # HP1paralogs-simulations
 Scripts to run the simulations of HP1 paralogs
 
-### 3D structures
+## 3D structures
 
 The `PDB_files` folder contains all the PDB files used for the simulations in the paper (e.g., HP1 homo- and heterodimer, chimeras, ...).
 
-### Single-chain simulations
+## Single-chain simulations
 
 1. **All-atom simulations**
 
@@ -28,7 +28,7 @@ Sample scripts in the `CG_sim` folder are used to run the single-chain coarse-gr
 mpirun lmp_mpi -in hp1a.lmp > log.out
 ```
 
-### Coarse-grained phase coexistence simulations
+## Coarse-grained phase coexistence simulations
 
 <img src='./files/HP1_slab.gif' width='360'>
 
