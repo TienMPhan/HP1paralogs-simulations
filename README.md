@@ -14,8 +14,11 @@ The `PDB_files` folder contains all the PDB files used for the simulations in th
 The `AA_sim` folder contains the Amber99SBws-STQ force field and sample script to run an all-atom simulation of $\rm HP1\alpha$ homodimer using OpenMM (7.5.1).
 
 ```python
-python run_equilibration.py -t 50 -f hp1a_dimer_amber99sbws_stq_tip4p2005s  # 50ns equilibration.
-python run_omm.py -t 50 -f hp1a_dimer_amber99sbws_stq_tip4p2005s  -idx1 1 -idx2 1  # 350ns production from checkpoint.
+# 50ns equilibration.
+python run_equilibration.py -t 50 -f hp1a_dimer_amber99sbws_stq_tip4p2005s
+
+# 350ns production from checkpoint.
+python run_omm.py -t 50 -f hp1a_dimer_amber99sbws_stq_tip4p2005s  -idx1 1 -idx2 2 
 ```
 
 2. **Coarse-grained simulations**
