@@ -39,7 +39,7 @@ python run_nvt.py 170x170x170_box_min.gsd --mode=gpu
 ```
 
 > [!NOTE]
-> HOOMD shoulf be complied with AZplugins [https://github.com/mphowardlab/azplugins](https://github.com/mphowardlab/azplugins)
+> HOOMD should be compiled with AZplugins [https://github.com/mphowardlab/azplugins](https://github.com/mphowardlab/azplugins)
 
 
 ### Reference:
