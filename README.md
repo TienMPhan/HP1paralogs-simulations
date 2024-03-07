@@ -9,7 +9,7 @@ The `PDB_files` folder contains all the PDB files used for the simulations in th
 
 1. **All-atom simulations**
 
-<img src='./files/HP1a_SC-AA.gif' width='360'>
+<img src='./files/HP1a_AA.gif' width='360'>
 
 The `AA_sim` folder contains the Amber99SBws-STQ force field and sample script to run an all-atom simulation of $\rm HP1\alpha$ homodimer using OpenMM (7.5.1).
 
